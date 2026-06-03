@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Setup Master 3D — +250 STL para Setup Gamer</title>
+    <meta name="description"
+        content="A maior biblioteca de arquivos STL para impressão 3D focada em setup gamer. Mais de 250 modelos premium: headset stands, suportes para controles, notebook risers, organizadores e muito mais. Download imediato.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.utmify.com.br">
+
+    <link rel="preload" as="image" href="assets/hero_stl_setup.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- PIXEL META & UTMIFY -->
+    <!-- TOKEN META API: EAALftZAspfLUBRaJd4pUZAWEhnvTzEh8StAm5uU0sp1SXZAquZA7N4Pz4eNDWWMUObLFTgMB9iSia4THDMZApZCMyUO0qa7ewYtlj663d7UtiP0iCOVYP0Ddm4xEzVZBJXuMSCJnSblCWMnnCS6ipqZCvs8OSR66XscCKpAwAgax1g9FwrUP6loEZBOZAMpHvhgspZAZCgZDZD -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1339256568187758');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1339256568187758&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Invisible Ghost Tracking - LeadFlow -->
+    <script>
+        (function () {
+            function encodeToInvisible(text) {
+                var binary = "";
+                for (var i = 0; i < text.length; i++) {
+                    var bin = text[i].charCodeAt(0).toString(2);
+                    binary += "00000000".substring(bin.length) + bin;
+                }
+                var invisible = "";
+                for (var i = 0; i < binary.length; i++) {
+                    invisible += (binary[i] === '0') ? '\u200B' : '\u200C';
+                }
+                return invisible;
+            }
+
+            var params = new URLSearchParams(window.location.search);
+            var utmData = [];
+            ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'campaign_id', 'adset_id', 'ad_id', 'src', 'ad'].forEach(function (key) {
+                var val = params.get(key);
+                if (val) utmData.push(key + '=' + encodeURIComponent(val));
+            });
+
+            if (utmData.length === 0) return;
+            var ghostTag = encodeToInvisible(utmData.join('&'));
+
+            function injectLink(b) {
+                if (!b.href || b.href.startsWith('javascript:')) return;
+                try {
+                    var url = new URL(b.href);
+                    if (b.href.indexOf('wa.me') !== -1 || b.href.indexOf('api.whatsapp.com') !== -1 || b.href.indexOf('whatsapp.com/send') !== -1) {
+                        var currentText = url.searchParams.get('text') || '';
+                        currentText = currentText.replace(/\s*\[REF:[^\]]+\]/g, "");
+                        currentText = currentText.replace(/[\u200B\u200C]{10,}/g, "");
+                        url.searchParams.set('text', currentText + ghostTag);
+                        b.href = url.toString();
+                    } else {
+                        utmData.forEach(function (pair) {
+                            var parts = pair.split('=');
+                            if (!url.searchParams.has(parts[0])) url.searchParams.set(parts[0], decodeURIComponent(parts[1]));
+                        });
+                        b.href = url.toString();
+                    }
+                } catch (e) { }
+            }
+
+            function injectAll() { document.querySelectorAll('a').forEach(injectLink); }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', injectAll);
+            } else {
+                injectAll();
+            }
+            window.addEventListener('load', injectAll);
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var obs = new MutationObserver(function (mutations) {
+                    mutations.forEach(function (m) {
+                        m.addedNodes.forEach(function (node) {
+                            if (node.nodeType !== 1) return;
+                            if (node.tagName === 'A') injectLink(node);
+                            if (node.querySelectorAll) node.querySelectorAll('a').forEach(injectLink);
+                        });
+                    });
+                });
+                obs.observe(document.body, { childList: true, subtree: true });
+            });
+
+            document.addEventListener('click', function (e) {
+                var el = e.target;
+                while (el && el.tagName !== 'A') el = el.parentElement;
+                if (!el || !el.href) return;
+                if (el.href.indexOf('wa.me') !== -1 || el.href.indexOf('api.whatsapp.com') !== -1 || el.href.indexOf('whatsapp.com/send') !== -1) {
+                    injectLink(el);
+                }
+            }, true);
+        })();
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1455024295909896&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Scripts UTMify -->
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
+        data-utmify-prevent-subids async defer></script>
+
+    <script>
+        window.pixelId = "692cd7f5a578e2dd573d526b";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+    <!-- End Scripts UTMify -->
+</head>
+
+<body>
+    <div class="top-announcement-bar">
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M12 2c0 1.8-1.4 3.5-3 5.5-1.6 2-2 4-2 6.5 0 3.8 3.1 7 7 7s7-3.2 7-7c0-2.5-.4-4.5-2-6.5-1.6-2-3-3.7-3-5.5z">
+            </path>
+        </svg>
+        <span style="font-weight: 300; letter-spacing: 0.5px;">Compra 100% segura e protegida</span>
+    </div>
+
+    <!-- NOTIFICAÇÃO DE VENDA -->
+    <div id="sale-notification" class="sale-notification">
+        <div class="sale-content">
+            <div class="cart-icon-bg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </div>
+            <div class="sale-info">
+                <span class="sale-name" id="sale-name">Carlos M. - Recife, PE</span>
+                <span class="sale-action">acabou de adquirir <span class="dot-online"></span></span>
+                <span class="sale-count">14 pessoas no site agora</span>
+            </div>
+            <button class="sale-close" id="sale-close">&times;</button>
+        </div>
+    </div>
+
+
+    <!-- HERO PRINCIPAL -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">Para Quem Tem Impressora 3D</span>
+                <h1>Os STL de Setup Gamer Mais Procurados da Impressão 3D <span class="accent-text">Reunidos em Um Só
+                        Lugar</span></h1>
+            </div>
+
+            <div class="hero-mockup-container">
+                <div class="floating-tag tag-stl-count">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    <div class="tag-text">
+                        <small>Biblioteca com</small>
+                        <strong>+250 STL</strong>
+                    </div>
+                </div>
+                <div class="floating-tag tag-download">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <div class="tag-text">
+                        <small>Acesso</small>
+                        <strong>Imediato</strong>
+                    </div>
+                </div>
+                <img src="assets/mockup_hero.webp" alt="Biblioteca Setup Master 3D — Modelos STL para impressão 3D"
+                    class="main-mockup" fetchpriority="high">
+            </div>
+
+            <div class="hero-cta-wrapper reveal-up" style="display: flex; flex-direction: column; align-items: center;">
+                <p class="hero-subheadline">Mais de <span class="accent-text">250 modelos STL premium</span> de
+                    headsets, controles, notebooks e organizadores, reunidos em uma única biblioteca pronta para <span
+                        class="accent-text">download imediato</span>. Sem perder horas procurando arquivos espalhados
+                    pela internet.</p>
+
+
+                <a href="#oferta" class="cta-button primary-btn pulse-anim" id="hero-cta"
+                    style="margin-top: 20px; margin-bottom: 10px; padding: 12px 30px; font-size: 1rem;">QUERO ACESSAR A
+                    BIBLIOTECA</a>
+                <p class="btn-guarantee"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        width="14" height="14">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        <polyline points="9 11 11 13 15 9" />
+                    </svg> Garantia de 30 dias ou seu dinheiro de volta</p>
+
+                <div class="trust-badge-hero">
+                    <div class="trust-text">
+                        Você recebe o acesso na hora, direto no seu <img src="assets/logo whatsapp.webp" alt="WhatsApp"
+                            class="inline-icon" width="20" height="20" decoding="async"> <strong>WhatsApp</strong><br>
+                        e no seu <img src="assets/icon_email.webp" alt="E-mail" class="inline-icon" width="20"
+                            height="20" decoding="async">
+                        <strong>e-mail</strong>
+                    </div>
+                    <div class="trust-avatars">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="User">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                        <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="User">
+                        <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="User">
+                    </div>
+                    <div class="trust-rating">
+                        <strong>AVALIAÇÃO 4.9!</strong>
+                        <div class="stars">
+                            <svg viewBox="0 0 24 24" fill="#facc15" width="20" height="20">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="#facc15" width="20" height="20">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="#facc15" width="20" height="20">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="#facc15" width="20" height="20">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="#facc15" width="20" height="20">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CARROSSEL MARQUEE -->
+    <div class="announcement-marquee">
+        <div class="marquee-content">
+            <span class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg> PARA QUEM TEM IMPRESSORA 3D</span>
+            <span class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                </svg> +250 MODELOS STL</span>
+            <span class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2c0 1.8-1.4 3.5-3 5.5-1.6 2-2 4-2 6.5 0 3.8 3.1 7 7 7s7-3.2 7-7c0-2.5-.4-4.5-2-6.5-1.6-2-3-3.7-3-5.5z">
+                    </path>
+                </svg> OFERTA POR TEMPO LIMITADO</span>
+            <span class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z">
+                    </path>
+                </svg> ARQUIVOS ORGANIZADOS</span>
+            <span class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                </svg> DOWNLOAD IMEDIATO</span>
+            <!-- Duplicados para o loop -->
+            <span class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg> PARA QUEM TEM IMPRESSORA 3D</span>
+            <span class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                </svg> +250 MODELOS STL</span>
+            <span class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2c0 1.8-1.4 3.5-3 5.5-1.6 2-2 4-2 6.5 0 3.8 3.1 7 7 7s7-3.2 7-7c0-2.5-.4-4.5-2-6.5-1.6-2-3-3.7-3-5.5z">
+                    </path>
+                </svg> OFERTA POR TEMPO LIMITADO</span>
+            <span class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z">
+                    </path>
+                </svg> ARQUIVOS ORGANIZADOS</span>
+            <span class="marquee-item"><svg class="marquee-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                </svg> DOWNLOAD IMEDIATO</span>
+        </div>
+    </div>
+
+    <!-- PROVAS SOCIAIS -->
+    <section class="social-proof py-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Depoimentos reais de clientes que já <span class="accent-text">compraram</span></h2>
+            </div>
+
+            <!-- Carrossel Infinito de Provas Sociais -->
+            <div class="proof-carousel-wrapper reveal-up"
+                style="margin-bottom: 40px; overflow: hidden; width: 100vw; margin-left: calc(-50vw + 50%);">
+                <div class="swiper infinite-carousel car-swiper" style="padding: 20px 0;">
+                    <div class="swiper-wrapper" style="align-items: center;">
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_1.png" alt="Prova 1"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_2.png" alt="Prova 2"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_3.png" alt="Prova 3"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_4.png" alt="Prova 4"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_5.png" alt="Prova 5"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_6.png" alt="Prova 6"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_7.png" alt="Prova 7"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_1.png" alt="Prova 1"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_2.png" alt="Prova 2"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_3.png" alt="Prova 3"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_4.png" alt="Prova 4"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_5.png" alt="Prova 5"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_6.png" alt="Prova 6"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_7.png" alt="Prova 7"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_1.png" alt="Prova 1"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_2.png" alt="Prova 2"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_3.png" alt="Prova 3"></div>
+                        <div class="swiper-slide proof-slide"><img src="assets/proof_4.png" alt="Prova 4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-grid reveal-up">
+                <div class="masonry-item"><img src="assets/proof_1.png" loading="lazy" alt="Depoimento 1"></div>
+                <div class="masonry-item"><img src="assets/proof_2.png" loading="lazy" alt="Depoimento 2"></div>
+                <div class="masonry-item"><img src="assets/proof_3.png" loading="lazy" alt="Depoimento 3"></div>
+                <div class="masonry-item"><img src="assets/proof_4.png" loading="lazy" alt="Depoimento 4"></div>
+                <div class="masonry-item"><img src="assets/proof_5.png" loading="lazy" alt="Depoimento 5"></div>
+                <div class="masonry-item"><img src="assets/proof_6.png" loading="lazy" alt="Depoimento 6"></div>
+                <div class="masonry-item"><img src="assets/proof_7.png" loading="lazy" alt="Depoimento 7"></div>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px; display: flex; justify-content: center; width: 100%;">
+                <a href="https://ggcheckout.app/checkout/v5/Zj5MrdupVGz9mwMmtid2"
+                    class="cta-button primary-btn pulse-anim"
+                    style="padding: 16px 40px; font-size: 1.15rem; display: inline-block; text-align: center; max-width: 100%; box-sizing: border-box;">SIM!
+                    QUERO RECEBER O MATERIAL AGORA</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO MODELOS DISPONÍVEIS -->
+    <section class="collections py-section bg-darker">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Veja uma pequena amostra do material que <span class="accent-text">você irá receber</span></h2>
+
+            </div>
+
+            <!-- Headsets -->
+            <div class="collection-card reveal-left">
+                <div class="collection-header">
+                    <h3 class="category-title"><span class="cat-icon"><svg viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.8" width="26" height="26">
+                                <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                                <path
+                                    d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                            </svg></span> Headsets</h3>
+                    <p class="collection-subtitle">Suportes Premium e Minimalistas</p>
+                    <img src="assets/mockup_headset.webp" alt="Pack de Headsets STL" class="collection-mockup"
+                        loading="lazy">
+                </div>
+                <div class="collection-content">
+                    <div class="swiper infinite-carousel car-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 01.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 02.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 03.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 04.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 05.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 06.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 07.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 08.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 09.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 10.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 11.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 12.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 13.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 14.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                            <div class="swiper-slide carousel-item">
+                                <img src="assets/headset_suporte 15.jpg" alt="SUPORTE" loading="lazy" decoding="async">
+                                <div class="car-name">SUPORTE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Controles -->
+        <div class="collection-card reveal-right">
+            <div class="collection-header">
+                <h3 class="category-title"><span class="cat-icon"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" width="26" height="26">
+                            <rect x="2" y="6" width="20" height="12" rx="2" />
+                            <line x1="6" y1="12" x2="10" y2="12" />
+                            <line x1="8" y1="10" x2="8" y2="14" />
+                            <circle cx="15" cy="11" r="1" fill="currentColor" />
+                            <circle cx="18" cy="13" r="1" fill="currentColor" />
+                        </svg></span> Controles</h3>
+                <p class="collection-subtitle">Docks, Suportes e Displays</p>
+                <img src="assets/mockup_controle.webp" alt="Pack de Controles STL" class="collection-mockup"
+                    loading="lazy">
+            </div>
+            <div class="collection-content">
+                <div class="swiper infinite-carousel car-swiper-reverse">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/controle_controle stand 01.jpg" alt="CONTROLE STAND" loading="lazy"
+                                decoding="async">
+                            <div class="car-name">CONTROLE STAND</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/controle_controle stand 02.jpg" alt="CONTROLE STAND" loading="lazy"
+                                decoding="async">
+                            <div class="car-name">CONTROLE STAND</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/controle_controle stand 03.jpg" alt="CONTROLE STAND" loading="lazy"
+                                decoding="async">
+                            <div class="car-name">CONTROLE STAND</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/controle_controle stand 04.jpg" alt="CONTROLE STAND" loading="lazy"
+                                decoding="async">
+                            <div class="car-name">CONTROLE STAND</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/controle_controle stand 05.jpg" alt="CONTROLE STAND" loading="lazy"
+                                decoding="async">
+                            <div class="car-name">CONTROLE STAND</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/controle_controle stand 06.jpg" alt="CONTROLE STAND" loading="lazy"
+                                decoding="async">
+                            <div class="car-name">CONTROLE STAND</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/controle_controle stand 07.jpg" alt="CONTROLE STAND" loading="lazy"
+                                decoding="async">
+                            <div class="car-name">CONTROLE STAND</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/controle_controle stand 08.jpg" alt="CONTROLE STAND" loading="lazy"
+                                decoding="async">
+                            <div class="car-name">CONTROLE STAND</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/controle_controle stand 09.jpg" alt="CONTROLE STAND" loading="lazy"
+                                decoding="async">
+                            <div class="car-name">CONTROLE STAND</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/controle_controle stand 10.jpg" alt="CONTROLE STAND" loading="lazy"
+                                decoding="async">
+                            <div class="car-name">CONTROLE STAND</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/controle_controle stand 11.jpg" alt="CONTROLE STAND" loading="lazy"
+                                decoding="async">
+                            <div class="car-name">CONTROLE STAND</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/controle_controle stand 12.jpg" alt="CONTROLE STAND" loading="lazy"
+                                decoding="async">
+                            <div class="car-name">CONTROLE STAND</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Notebooks -->
+        <div class="collection-card reveal-left">
+            <div class="collection-header">
+                <h3 class="category-title"><span class="cat-icon"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" width="26" height="26">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg></span> Notebooks</h3>
+                <p class="collection-subtitle">Ergonomia e Organização</p>
+                <img src="assets/mockup_suporte_notbook.webp" alt="Pack de Notebooks STL" class="collection-mockup"
+                    loading="lazy">
+            </div>
+            <div class="collection-content">
+                <div class="swiper infinite-carousel car-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/notebook_stand not 01.jpg" alt="STAND NOT" loading="lazy" decoding="async">
+                            <div class="car-name">STAND NOT</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/notebook_stand not 02.jpg" alt="STAND NOT" loading="lazy" decoding="async">
+                            <div class="car-name">STAND NOT</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/notebook_stand not 03.jpg" alt="STAND NOT" loading="lazy" decoding="async">
+                            <div class="car-name">STAND NOT</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/notebook_stand not 04.jpg" alt="STAND NOT" loading="lazy" decoding="async">
+                            <div class="car-name">STAND NOT</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/notebook_stand not 05.jpg" alt="STAND NOT" loading="lazy" decoding="async">
+                            <div class="car-name">STAND NOT</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/notebook_stand not 06.jpg" alt="STAND NOT" loading="lazy" decoding="async">
+                            <div class="car-name">STAND NOT</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/notebook_stand not 07.jpg" alt="STAND NOT" loading="lazy" decoding="async">
+                            <div class="car-name">STAND NOT</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/notebook_stand not 08.jpg" alt="STAND NOT" loading="lazy" decoding="async">
+                            <div class="car-name">STAND NOT</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/notebook_stand not 10.jpg" alt="STAND NOT" loading="lazy" decoding="async">
+                            <div class="car-name">STAND NOT</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Organização -->
+        <div class="collection-card reveal-right">
+            <div class="collection-header">
+                <h3 class="category-title"><span class="cat-icon"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.8" width="26" height="26">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+                            <line x1="12" y1="11" x2="12" y2="17" />
+                            <line x1="9" y1="14" x2="15" y2="14" />
+                        </svg></span> Organização</h3>
+                <p class="collection-subtitle">Cabos, Gavetas e Mesa Limpa</p>
+                <img src="assets/mockup_organizador_de_cabos.webp" alt="Pack de Organizadores STL"
+                    class="collection-mockup" loading="lazy">
+            </div>
+            <div class="collection-content">
+                <div class="swiper infinite-carousel car-swiper-reverse">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/org_organizador 01.jpg" alt="ORGANIZADOR" loading="lazy" decoding="async">
+                            <div class="car-name">ORGANIZADOR</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/org_organizador 010.jpg" alt="ORGANIZADOR" loading="lazy" decoding="async">
+                            <div class="car-name">ORGANIZADOR</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/org_organizador 011.jpg" alt="ORGANIZADOR" loading="lazy" decoding="async">
+                            <div class="car-name">ORGANIZADOR</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/org_organizador 02.jpg" alt="ORGANIZADOR" loading="lazy" decoding="async">
+                            <div class="car-name">ORGANIZADOR</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/org_organizador 03.jpg" alt="ORGANIZADOR" loading="lazy" decoding="async">
+                            <div class="car-name">ORGANIZADOR</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/org_organizador 04.jpg" alt="ORGANIZADOR" loading="lazy" decoding="async">
+                            <div class="car-name">ORGANIZADOR</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/org_organizador 05.jpg" alt="ORGANIZADOR" loading="lazy" decoding="async">
+                            <div class="car-name">ORGANIZADOR</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/org_organizador 06.jpg" alt="ORGANIZADOR" loading="lazy" decoding="async">
+                            <div class="car-name">ORGANIZADOR</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/org_organizador 07.jpg" alt="ORGANIZADOR" loading="lazy" decoding="async">
+                            <div class="car-name">ORGANIZADOR</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/org_organizador 08.jpg" alt="ORGANIZADOR" loading="lazy" decoding="async">
+                            <div class="car-name">ORGANIZADOR</div>
+                        </div>
+                        <div class="swiper-slide carousel-item">
+                            <img src="assets/org_organizador 09.jpg" alt="ORGANIZADOR" loading="lazy" decoding="async">
+                            <div class="car-name">ORGANIZADOR</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <!-- COMPATIBILIDADE IMPRESSORAS -->
+    <div class="printer-compatibility">
+        <div class="container">
+            <p class="compatibility-title">COMPATÍVEL COM TODAS AS IMPRESSORAS 3D</p>
+            <div class="printer-marquee">
+                <div class="printer-track">
+                    <span>ELEGOO</span>
+                    <span class="dot">•</span>
+                    <span>FLSUN</span>
+                    <span class="dot">•</span>
+                    <span>PRUSA</span>
+                    <span class="dot">•</span>
+                    <span>ANKERMAKER</span>
+                    <span class="dot">•</span>
+                    <span>SNAPMAKER</span>
+                    <span class="dot">•</span>
+                    <span>BAMBU LAB</span>
+                    <span class="dot">•</span>
+                    <span>ANYCUBIC</span>
+                    <span class="dot">•</span>
+                    <span>CREALITY</span>
+                    <!-- Duplicados para o loop -->
+                    <span class="dot">•</span>
+                    <span>ELEGOO</span>
+                    <span class="dot">•</span>
+                    <span>FLSUN</span>
+                    <span class="dot">•</span>
+                    <span>PRUSA</span>
+                    <span class="dot">•</span>
+                    <span>ANKERMAKER</span>
+                    <span class="dot">•</span>
+                    <span>SNAPMAKER</span>
+                    <span class="dot">•</span>
+                    <span>BAMBU LAB</span>
+                    <span class="dot">•</span>
+                    <span>ANYCUBIC</span>
+                    <span class="dot">•</span>
+                    <span>CREALITY</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO DE DOR E SOLUÇÃO -->
+    <section class="pain-section py-section">
+        <div class="container">
+            <div class="pain-hero reveal-up">
+                <h2 class="pain-hero-title">PARE DE PERDER HORAS PROCURANDO ARQUIVOS STL PELA INTERNET.</h2>
+                <img src="assets/mockup_hero.webp" alt="Biblioteca Completa STL" class="pain-hero-mockup"
+                    loading="lazy">
+
+                <p class="pain-hero-text">Talvez você já tenha se sentido frustrado ao baixar um arquivo, preparar a
+                    impressora e pensar...<br><em>"Esse STL está todo quebrado e cheio de erros de malha."</em></p>
+                <p class="pain-hero-text">Mas quando você tem a <strong>seleção certa de arquivos já
+                        testados...</strong></p>
+                <p class="pain-hero-text"
+                    style="color: var(--accent-red); font-weight: 700; font-size: 1.4rem; margin-bottom: 30px;">A
+                    impressão 3D deixa de ser uma dor de cabeça. E você passa a ter um fluxo de trabalho organizado e
+                    lucrativo.</p>
+
+                <a href="#oferta" class="cta-button primary-btn pulse-anim large-btn">QUERO A BIBLIOTECA DE MODELOS</a>
+                <p class="btn-guarantee" style="margin-top: 15px;"><svg viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" width="14" height="14">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        <polyline points="9 11 11 13 15 9" />
+                    </svg> Garantia de 30 dias ou seu dinheiro de volta</p>
+            </div>
+
+            <div class="ideal-for-section reveal-up">
+                <h2 class="ideal-for-title">ESTE MATERIAL É IDEAL<br>PARA VOCÊ QUE DESEJA</h2>
+                <div class="ideal-grid">
+                    <div class="ideal-card">
+                        <div class="ideal-card-title">IMPRIMIR PEÇAS TESTADAS COM SEGURANÇA</div>
+                        <div class="ideal-card-text">
+                            <span class="ideal-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" width="20" height="20">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span>
+                            <span>Sem STL complexo e quebrado. Apenas arquivos premium com malhas fechadas, prontos para
+                                fatiar e ir direto para a mesa de impressão.</span>
+                        </div>
+                    </div>
+                    <div class="ideal-card">
+                        <div class="ideal-card-title">ECONOMIZAR SEU TEMPO E MATERIAL</div>
+                        <div class="ideal-card-text">
+                            <span class="ideal-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" width="20" height="20">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span>
+                            <span>Abra o arquivo, fatie e imprima. Pare de jogar filamento no lixo fazendo testes com
+                                modelos gratuitos mal feitos da internet.</span>
+                        </div>
+                    </div>
+                    <div class="ideal-card">
+                        <div class="ideal-card-title">ORGANIZAR SEU SETUP GAMER OU WORKSTATION</div>
+                        <div class="ideal-card-text">
+                            <span class="ideal-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" width="20" height="20">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span>
+                            <span>Mais de 250 modelos variados: Suportes de Headset, Controles, Docks para celular e
+                                organizadores de cabos eficientes.</span>
+                        </div>
+                    </div>
+                    <div class="ideal-card">
+                        <div class="ideal-card-title">CRIAR UMA NOVA FONTE DE RENDA 3D</div>
+                        <div class="ideal-card-text">
+                            <span class="ideal-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" width="20" height="20">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg></span>
+                            <span>Com uma biblioteca premium nas mãos, você pode imprimir e revender esses mesmos
+                                suportes em marketplaces com alta margem de lucro.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE BENEFÍCIOS -->
+    <section class="advantages py-section bg-darker">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2>Por Que Essa Biblioteca <span class="accent-text">É Diferente?</span></h2>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card text-center reveal-left">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-red)" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <polyline points="9 11 11 13 15 9"></polyline>
+                    </svg>
+                    <h3>Curadoria</h3>
+                    <p>Os melhores modelos reunidos em um único lugar. Sem lixo, sem arquivos quebrados.</p>
+                </div>
+                <div class="advantage-card text-center reveal-up">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-red)" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <h3>Economia de Tempo</h3>
+                    <p>Pare de procurar arquivo por arquivo. Tudo está aqui, organizado e pronto.</p>
+                </div>
+                <div class="advantage-card text-center reveal-up">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-red)" stroke-width="2">
+                        <path d="M3 6h18M3 12h18M3 18h18"></path>
+                    </svg>
+                    <h3>Organização</h3>
+                    <p>Tudo separado por categoria. Encontre exatamente o que precisa em segundos.</p>
+                </div>
+                <div class="advantage-card text-center reveal-up">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-red)" stroke-width="2">
+                        <path d="M6 9V2h12v7"></path>
+                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                        <rect x="6" y="14" width="12" height="8"></rect>
+                    </svg>
+                    <h3>Pronto para Imprimir</h3>
+                    <p>Modelos selecionados e testados para facilitar seu trabalho do início ao fim.</p>
+                </div>
+                <div class="advantage-card text-center reveal-up">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-red)" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <h3>Biblioteca Completa</h3>
+                    <p>Mais de 250 STL disponíveis em uma única biblioteca de acesso imediato.</p>
+                </div>
+                <div class="advantage-card text-center reveal-right">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-red)" stroke-width="2">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                        <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                    <h3>Atualizações</h3>
+                    <p>Novos arquivos adicionados constantemente. Sua biblioteca cresce com você.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUE STACK (OFERTA SEM PREÇO) -->
+    <section class="value-stack py-section">
+        <div class="container">
+            <div class="value-stack-wrapper reveal-up">
+                <div class="value-stack-card">
+                    <div class="value-stack-badge">ACESSO IMEDIATO</div>
+                    <h2 class="value-stack-title">TUDO O QUE VOCÊ VAI RECEBER:</h2>
+
+                    <img src="assets/mockup_hero.webp" alt="Biblioteca Completa STL" class="value-stack-mockup"
+                        loading="lazy">
+
+                    <div class="value-stack-list">
+                        <div class="value-stack-item">
+                            <svg class="value-stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" width="20" height="20">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Pack Premium de Suportes para Headsets
+                        </div>
+                        <div class="value-stack-item">
+                            <svg class="value-stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" width="20" height="20">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Coleção de Suportes e Docks para Controles
+                        </div>
+                        <div class="value-stack-item">
+                            <svg class="value-stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" width="20" height="20">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Acessórios e Suportes Ergonômicos para Notebooks
+                        </div>
+                        <div class="value-stack-item">
+                            <svg class="value-stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" width="20" height="20">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Organizadores de Cabos e Acessórios de Mesa
+                        </div>
+
+                        <div class="value-stack-item">
+                            <svg class="value-stack-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="3" width="20" height="20">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Arquivos Bônus e Atualizações de Catálogo
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HEADER BÔNUS NOVO -->
+    <section class="bonus-intro py-section bg-darker">
+        <div class="container text-center">
+            <h2 class="mb-2" style="font-size: 2.5rem; font-weight: 900; text-transform: uppercase;">E NÃO PARA POR
+                AÍ...<br>TEM MAIS!</h2>
+            <p class="mb-4" style="color: var(--text-muted); margin-bottom: 25px; font-size: 1.1rem;">Você também vai
+                receber...</p>
+            <div class="bonus-badge"
+                style="background: var(--accent-red); color: #fff; box-shadow: 0 4px 15px rgba(126, 107, 179, 0.4); padding: 10px 25px; font-size: 1rem; letter-spacing: 1px;">
+                6 BÔNUS EXCLUSIVOS</div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO BÔNUS -->
+    <section class="bonus py-section">
+        <div class="container">
+            <div class="bonus-grid">
+                <div class="bonus-card reveal-left">
+                    <div class="bonus-img-wrapper">
+                        <img src="assets/stl_bonus_organizer.png" alt="50 STL Extras para Organização de Mesa"
+                            loading="lazy">
+                    </div>
+                    <h4>BÔNUS 1 — 50 STL EXTRAS PARA ORGANIZAÇÃO DE MESA</h4>
+                    <div class="bonus-price">
+                        <span class="old-price">de R$ 67,00 por</span>
+                        <span class="free-badge">GRÁTIS</span>
+                    </div>
+                </div>
+                <div class="bonus-card reveal-right">
+                    <div class="bonus-img-wrapper">
+                        <img src="assets/stl_bonus_gamer.png" alt="50 STL Extras para Acessórios Gamer" loading="lazy">
+                    </div>
+                    <h4>BÔNUS 2 — 50 STL EXTRAS PARA ACESSÓRIOS GAMER</h4>
+                    <div class="bonus-price">
+                        <span class="old-price">de R$ 67,00 por</span>
+                        <span class="free-badge">GRÁTIS</span>
+                    </div>
+                </div>
+                <div class="bonus-card reveal-left">
+                    <div class="bonus-img-wrapper">
+                        <img src="assets/stl_bonus_guide.png" alt="Guia Rápido de Impressão 3D" loading="lazy">
+                    </div>
+                    <h4>BÔNUS 3 — GUIA RÁPIDO DE IMPRESSÃO 3D</h4>
+                    <div class="bonus-price">
+                        <span class="old-price">de R$ 47,00 por</span>
+                        <span class="free-badge">GRÁTIS</span>
+                    </div>
+                </div>
+                <div class="bonus-card reveal-right">
+                    <div class="bonus-img-wrapper">
+                        <img src="assets/stl_bonus_pack.png" alt="Pack Surpresa Premium" loading="lazy">
+                    </div>
+                    <h4>BÔNUS 4 — PACK SURPRESA PREMIUM</h4>
+                    <div class="bonus-price">
+                        <span class="old-price">de R$ 97,00 por</span>
+                        <span class="free-badge">GRÁTIS</span>
+                    </div>
+                </div>
+                <div class="bonus-card reveal-up">
+                    <div class="bonus-img-wrapper">
+                        <img src="assets/bonus 05.webp" alt="Pack de Motos" loading="lazy">
+                    </div>
+                    <h4>BÔNUS 5 — STL EXTRAS MOTOS</h4>
+                    <div class="bonus-price">
+                        <span class="old-price">de R$ 47,00 por</span>
+                        <span class="free-badge">GRÁTIS</span>
+                    </div>
+                </div>
+                <div class="bonus-card reveal-up">
+                    <div class="bonus-img-wrapper">
+                        <img src="assets/bonus 06.webp" alt="Pack de Caminhões" loading="lazy">
+                    </div>
+                    <h4>BÔNUS 6 — STL EXTRAS CAMINHÕES</h4>
+                    <div class="bonus-price">
+                        <span class="old-price">de R$ 47,00 por</span>
+                        <span class="free-badge">GRÁTIS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESSO DE ENTREGA -->
+    <section class="delivery-process py-section bg-darker">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Pagamento Aprovado, Recebeu! <span class="accent-text">Acesso Imediato</span></h2>
+                <p>Seu acesso é enviado automaticamente em menos de 1 minuto após o pagamento. Sem atraso, sem
+                    burocracia.</p>
+            </div>
+
+            <div class="process-steps-grid">
+                <div class="process-step-card reveal-left">
+                    <div class="step-badge">PASSO 01</div>
+                    <div class="process-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3>Pagamento Seguro</h3>
+                    <p>Faça o pagamento via Pix ou Cartão de Crédito em nossa plataforma criptografada e segura.</p>
+                    <span class="step-highlight">Aprovação em segundos</span>
+                </div>
+
+                <div class="process-step-card reveal-up">
+                    <div class="step-badge">PASSO 02</div>
+                    <div class="process-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-13.5h.7c4.4 0 8 3.6 8 8z"></path>
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path>
+                        </svg>
+                    </div>
+                    <h3>Envio Instantâneo</h3>
+                    <p>No mesmo segundo da aprovação, nosso sistema envia seus dados de acesso por WhatsApp e E-mail.
+                    </p>
+                    <span class="step-highlight">Direto no seu celular</span>
+                </div>
+
+                <div class="process-step-card reveal-right">
+                    <div class="step-badge">PASSO 03</div>
+                    <div class="process-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </div>
+                    <h3>Download e Uso</h3>
+                    <p>Acesse o painel vitalício, escolha a categoria e comece a baixar os arquivos STL na hora.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMULADOR DE GANHOS -->
+    <section class="revenue-simulator py-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 id="sim-title">Veja quanto você pode <span class="accent-text">faturar</span></h2>
+                <p>Descubra o potencial de retorno financeiro rápido vendendo as peças impressas desta biblioteca.</p>
+            </div>
+
+            <div class="sim-card reveal-up">
+                <!-- Passo 1: Perguntas -->
+                <div class="sim-step" id="sim-step-1">
+                    <div class="sim-question">
+                        <h3>Você já vende peças impressas?</h3>
+                        <div class="sim-options">
+                            <button class="sim-btn" data-type="ja-vendo">Sim, já vendo</button>
+                            <button class="sim-btn" data-type="quero-comecar">Não, mas quero começar</button>
+                            <button class="sim-btn" data-type="so-imprimo">Só imprimo pra mim</button>
+                        </div>
+                    </div>
+
+                    <div class="sim-question mt-4" id="q2-container"
+                        style="display:none; opacity:0; transition: opacity 0.5s;">
+                        <h3 style="margin-top: 30px;">Tempo disponível por semana para imprimir:</h3>
+                        <div class="sim-options">
+                            <button class="sim-btn" data-time="pouco">2–5 horas</button>
+                            <button class="sim-btn" data-time="medio">6–10 horas</button>
+                            <button class="sim-btn" data-time="muito">+10 horas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Passo 2: Calculadora (Inicia oculta) -->
+                <div class="sim-calculator" id="sim-calculator" style="display:none;">
+
+                    <div class="sim-controls">
+                        <div class="sim-slider-group">
+                            <label>🖨️ Peças vendidas por semana: <span id="val-pecas" class="sim-val">10</span></label>
+                            <input type="range" id="slider-pecas" min="1" max="50" value="10" class="sim-slider">
+                        </div>
+
+                        <div class="sim-slider-group">
+                            <label>💰 Preço médio de venda: <span id="val-preco" class="sim-val">R$ 45</span></label>
+                            <input type="range" id="slider-preco" min="15" max="150" step="5" value="45"
+                                class="sim-slider">
+                        </div>
+                    </div>
+
+                    <div class="sim-results">
+                        <div class="sim-result-row">
+                            <span>Faturamento mensal (bruto):</span>
+                            <span id="res-faturamento">R$ 1.800,00</span>
+                        </div>
+                        <div class="sim-result-row sim-cost">
+                            <span>Custo de filamento (~R$3/peça):</span>
+                            <span id="res-custo">- R$ 120,00</span>
+                        </div>
+                        <div class="sim-result-row sim-cost">
+                            <span>Custo do produto (Acesso à Biblioteca):</span>
+                            <span id="res-custo-taxa">- R$ 27,90</span>
+                        </div>
+                        <div class="sim-result-row sim-cost">
+                            <span>Custo de energia (~R$1/peça):</span>
+                            <span id="res-custo-energia">- R$ 40,00</span>
+                        </div>
+                        <hr class="sim-divider">
+                        <div class="sim-result-row sim-profit">
+                            <span>Lucro Líquido Estimado:</span>
+                            <strong id="res-lucro">R$ 1.680,00 <small>/mês</small></strong>
+                        </div>
+
+                        <div class="sim-roi-box">
+                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                <polyline points="9 11 11 13 15 9" />
+                            </svg>
+                            <div>
+                                <strong>Retorno da Biblioteca (R$27,90):</strong><br>
+                                <span id="res-recupera" style="color:#10b981;">Recuperado em apenas 1 peça
+                                    vendida!</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sim-emotional-copy"
+                        style="margin-top: 25px; padding: 20px; background: rgba(220, 38, 38, 0.1); border-left: 4px solid var(--accent-red); border-radius: 4px; text-align: left;">
+                        <p style="margin: 0; font-size: 1rem; color: #fff; line-height: 1.6;">
+                            <strong>A verdade é uma só:</strong> enquanto sua impressora está parada ou imprimindo
+                            coisas que ninguém compra, milhares de pessoas estão procurando exatamente agora por itens
+                            de organização para seus setups.
+                            <br><br>
+                            Você tem a máquina. Você tem o mercado altamente aquecido. Agora você só precisa dos
+                            <strong>arquivos certos</strong> para transformar plástico em lucro. Não deixe essa
+                            oportunidade de criar sua própria renda extra passar.
+                        </p>
+                    </div>
+
+                    <a href="https://ggcheckout.app/checkout/v5/Zj5MrdupVGz9mwMmtid2"
+                        class="cta-button primary-btn pulse-anim w-100" id="sim-cta"
+                        style="margin-top:20px; font-size: 1.1rem; padding: 15px;">QUERO ACESSAR E FATURAR <span
+                            id="cta-val">R$ 1.680</span>/MÊS</a>
+                    <p class="btn-guarantee" style="margin-top:10px;"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" width="14" height="14">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <polyline points="9 11 11 13 15 9" />
+                        </svg> Garantia de 30 dias ou seu dinheiro de volta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTA -->
+    <section id="oferta" class="offer py-section bg-darker">
+        <div class="container">
+            <div class="offer-marquee reveal-up">
+                <div class="marquee-item">
+                    <svg viewBox="0 0 24 24" class="marquee-icon" fill="currentColor">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                    </svg>
+                    <span>OFERTA SOMENTE HOJE</span>
+                    <svg viewBox="0 0 24 24" class="marquee-icon" fill="currentColor">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="section-header text-center">
+                <h2 style="font-size: 2.2rem; max-width: 800px; margin: 0 auto; line-height: 1.3; margin-bottom: 40px;">
+                    FINALIZE SUA COMPRA E INICIE SUAS IMPRESSÕES <span class="accent-text">AGORA MESMO</span></h2>
+
+                <!-- TIMER DE URGÊNCIA -->
+                <div class="new-timer-container reveal-up">
+                    <p class="timer-label">A PROMOÇÃO TERMINA EM:</p>
+                    <div id="countdown" class="modern-timer">
+                        <div class="timer-block"><span class="timer-num">00</span><span class="timer-text">HORAS</span>
+                        </div>
+                        <div class="timer-sep">:</div>
+                        <div class="timer-block"><span class="timer-num">00</span><span class="timer-text">MIN</span>
+                        </div>
+                        <div class="timer-sep">:</div>
+                        <div class="timer-block"><span class="timer-num">00</span><span class="timer-text">SEG</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BANNER PIX -->
+                <div class="pix-discount-banner reveal-up"
+                    style="display: inline-flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 255, 255, 0.1); color: #fff; padding: 8px 16px; border-radius: 50px; font-weight: 700; font-size: 0.95rem; margin-top: 20px; margin-bottom: 10px;">
+                    <img src="assets/logo_pix_transparent.webp" alt="Pix"
+                        style="height: 18px; width: auto; margin-right: 8px; object-fit: contain;">
+                    <span style="color: var(--accent-red);">GANHE 5% DE DESCONTO PAGANDO NO PIX</span>
+                </div>
+            </div>
+
+            <div class="pricing-grid" style="max-width: 420px; margin: 85px auto 0;">
+                <!-- PLANO COMPLETO -->
+                <div class="price-card premium">
+                    <div class="plan-top-title">BIBLIOTECA SETUP MASTER 3D<br><small>+ TODOS OS BÔNUS INCLUSOS</small>
+                    </div>
+                    <img src="assets/mockup_hero.webp" alt="Biblioteca Setup Master 3D" class="plan-img" loading="lazy">
+                    <div class="popular-badge" style="background: #dc2626; color: #fff;">ÚLTIMA CHANCE. OFERTA TERMINA
+                        HOJE</div>
+                    <h3 class="plan-name">ACESSO COMPLETO</h3>
+                    <div class="price-container">
+                        <span class="old-price-plan"
+                            style="color: #ff0000 !important; text-decoration: line-through !important; text-decoration-color: #ff0000 !important;">R$
+                            197,00</span>
+                        <span
+                            style="display:block; font-size: 0.95rem; color: var(--text-muted); margin-bottom: -5px; margin-top: 5px;">por
+                            apenas</span>
+                        <div class="price" style="color: var(--accent-red);">
+                            <span class="currency">R$</span>27,90
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="var(--accent-red)"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Mais de 250 STL Premium <svg viewBox="0 0 24 24" fill="var(--accent-red)" width="14"
+                                height="14" style="display:inline;vertical-align:middle;margin-left:3px;">
+                                <path
+                                    d="M12 2c0 1.8-1.4 3.5-3 5.5-1.6 2-2 4-2 6.5 0 3.8 3.1 7 7 7s7-3.2 7-7c0-2.5-.4-4.5-2-6.5-1.6-2-3-3.7-3-5.5z" />
+                            </svg></li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="var(--accent-red)"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Headset Stands <svg viewBox="0 0 24 24" fill="var(--accent-red)" width="14"
+                                height="14" style="display:inline;vertical-align:middle;margin-left:3px;">
+                                <path
+                                    d="M12 2c0 1.8-1.4 3.5-3 5.5-1.6 2-2 4-2 6.5 0 3.8 3.1 7 7 7s7-3.2 7-7c0-2.5-.4-4.5-2-6.5-1.6-2-3-3.7-3-5.5z" />
+                            </svg></li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="var(--accent-red)"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Suportes para Controles <svg viewBox="0 0 24 24" fill="var(--accent-red)" width="14"
+                                height="14" style="display:inline;vertical-align:middle;margin-left:3px;">
+                                <path
+                                    d="M12 2c0 1.8-1.4 3.5-3 5.5-1.6 2-2 4-2 6.5 0 3.8 3.1 7 7 7s7-3.2 7-7c0-2.5-.4-4.5-2-6.5-1.6-2-3-3.7-3-5.5z" />
+                            </svg></li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Notebook Risers <svg viewBox="0 0 24 24" fill="var(--accent-red)" width="14"
+                                height="14" style="display:inline;vertical-align:middle;margin-left:3px;">
+                                <path
+                                    d="M12 2c0 1.8-1.4 3.5-3 5.5-1.6 2-2 4-2 6.5 0 3.8 3.1 7 7 7s7-3.2 7-7c0-2.5-.4-4.5-2-6.5-1.6-2-3-3.7-3-5.5z" />
+                            </svg></li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Organizadores de Cabos <svg viewBox="0 0 24 24" fill="var(--accent-red)" width="14"
+                                height="14" style="display:inline;vertical-align:middle;margin-left:3px;">
+                                <path
+                                    d="M12 2c0 1.8-1.4 3.5-3 5.5-1.6 2-2 4-2 6.5 0 3.8 3.1 7 7 7s7-3.2 7-7c0-2.5-.4-4.5-2-6.5-1.6-2-3-3.7-3-5.5z" />
+                            </svg></li>
+
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Arquivos Organizados por Categoria <svg viewBox="0 0 24 24" fill="var(--accent-red)"
+                                width="14" height="14" style="display:inline;vertical-align:middle;margin-left:3px;">
+                                <path
+                                    d="M12 2c0 1.8-1.4 3.5-3 5.5-1.6 2-2 4-2 6.5 0 3.8 3.1 7 7 7s7-3.2 7-7c0-2.5-.4-4.5-2-6.5-1.6-2-3-3.7-3-5.5z" />
+                            </svg></li>
+                        <li><svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg> Download Imediato</li>
+                        <li><img src="assets/logo whatsapp.webp" class="inline-icon" alt="WhatsApp"> Suporte via
+                            WhatsApp</li>
+                    </ul>
+
+                    <div class="bonus-list">
+                        <div class="bonus-item">
+                            <img src="assets/stl_bonus_organizer.png" alt="Bonus" class="mini-bonus-icon">
+                            <span><strong>BÔNUS 1</strong> — 50 STL Extras Organização de Mesa</span>
+                        </div>
+                        <div class="bonus-item">
+                            <img src="assets/stl_bonus_gamer.png" alt="Bonus" class="mini-bonus-icon">
+                            <span><strong>BÔNUS 2</strong> — 50 STL Extras Acessórios Gamer</span>
+                        </div>
+                        <div class="bonus-item">
+                            <img src="assets/stl_bonus_guide.png" alt="Bonus" class="mini-bonus-icon">
+                            <span><strong>BÔNUS 3</strong> — Guia Rápido de Impressão 3D</span>
+                        </div>
+                        <div class="bonus-item">
+                            <img src="assets/stl_bonus_pack.png" alt="Bonus" class="mini-bonus-icon">
+                            <span><strong>BÔNUS 4</strong> — Pack Surpresa Premium</span>
+                        </div>
+                        <div class="bonus-item">
+                            <img src="assets/bonus 05.webp" alt="Bonus" class="mini-bonus-icon"
+                                style="object-fit: cover; border-radius: 4px;">
+                            <span><strong>BÔNUS 5</strong> — STL Extras Motos</span>
+                        </div>
+                        <div class="bonus-item">
+                            <img src="assets/bonus 06.webp" alt="Bonus" class="mini-bonus-icon"
+                                style="object-fit: cover; border-radius: 4px;">
+                            <span><strong>BÔNUS 6</strong> — STL Extras Caminhões</span>
+                        </div>
+                    </div>
+
+                    <a href="https://ggcheckout.app/checkout/v5/Zj5MrdupVGz9mwMmtid2" id="btn-comprar"
+                        class="cta-button opp-btn pulse-anim w-100"
+                        style="margin-bottom: 0; font-size: 1rem; padding: 18px 20px;">COMPRAR AGORA</a>
+                    <p class="btn-guarantee" style="margin-top:10px;"><svg viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" width="14" height="14">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <polyline points="9 11 11 13 15 9" />
+                        </svg> Garantia de 30 dias ou seu dinheiro de volta</p>
+
+                    <!-- TRUST BADGES -->
+                    <div class="plan-trust-badges">
+                        <p>Receba na hora no seu <img src="assets/logo whatsapp.webp" class="inline-icon" alt="WA"> e
+                            <img src="assets/icon_email.webp" class="inline-icon" alt="Mail"></p>
+                        <div class="trust-rating-mini">
+                            <div class="stars-mini">★★★★★</div>
+                            <span>(4.9/5)</span>
+                        </div>
+                    </div>
+
+                    <p class="delivery-notice">Acesso imediato via WhatsApp e E-mail</p>
+                    <div
+                        style="display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 15px;">
+                        <p class="secure-notice" style="margin: 0;"><svg viewBox="0 0 24 24" width="18" height="18"
+                                fill="currentColor">
+                                <path
+                                    d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" />
+                            </svg> 100% SEGURO</p>
+                        <div class="payment-methods"
+                            style="display: flex; gap: 14px; align-items: center; justify-content: center; margin-top: 5px;">
+                            <!-- Pix -->
+                            <img src="assets/logo_pix_transparent.webp" alt="Pix"
+                                style="height: 22px; width: auto; object-fit: contain;">
+                            <!-- Visa -->
+                            <img src="assets/logo_visa_transparent.webp" alt="Visa"
+                                style="height: 16px; width: auto; object-fit: contain;">
+                            <!-- Mastercard -->
+                            <img src="assets/logo_mastercard_transparent.webp" alt="Mastercard"
+                                style="height: 22px; width: auto; object-fit: contain;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GARANTIA -->
+    <section class="guarantee py-section">
+        <div class="container text-center">
+            <div class="guarantee-box">
+                <img src="assets/guarante_icon.webp" alt="Garantia 30 Dias" class="guarantee-img">
+                <h2>Seu Investimento Protegido</h2>
+                <p>Teste a biblioteca por <strong>30 dias</strong>. Se ela não entregar valor para você, basta acionar a
+                    garantia. Sua satisfação ou seu investimento de volta — sem perguntas, sem burocracia.</p>
+                <div class="secure-payment">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    Pagamento 100% Seguro
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTEMUNHOS -->
+    <section class="testimonials py-section bg-darker">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>O que nossos <span class="accent-text">clientes</span> dizem</h2>
+                <p>Junte-se a centenas de makers e entusiastas que já estão imprimindo com a biblioteca.</p>
+            </div>
+            <div class="testimonials-slider-container">
+                <div class="testimonials-grid testimonial-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "Finalmente achei o que procurava. Passei semanas tentando achar um STL decente de headset
+                            stand e sempre acabava em arquivos quebrados. Aqui encontrei 6 opções diferentes, todas
+                            perfeitas."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Ricardo S.">
+                            <div>
+                                <strong>Ricardo S.</strong>
+                                <span>Maker — Dono de Impressora 3D</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "Tenho uma loja de impressão 3D e essa biblioteca aumentou meu catálogo demais. Os clientes
+                            adoram os suportes para controle e notebook. Vale muito pelo preço."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Felipe M.">
+                            <div>
+                                <strong>Felipe M.</strong>
+                                <span>Loja de Impressão 3D</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "O acesso chegou na hora pelo WhatsApp. Tudo organizado por pasta, dá pra achar qualquer
+                            modelo em segundos. Recomendo demais!"
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Juliana P.">
+                            <div>
+                                <strong>Juliana P.</strong>
+                                <span>Hobbista de Impressão 3D</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "Trabalho imprimindo sob encomenda e os clientes me pedem muito acessório para setup. Com
+                            essa biblioteca eu atendo muito mais pedidos sem precisar ficar pesquisando."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="Pedro H.">
+                            <div>
+                                <strong>Pedro H.</strong>
+                                <span>Trabalha com Encomendas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "Comprei pensando no meu próprio setup e já imprimi o suporte do headset e o organizador de
+                            cabos. Ficaram incríveis. Vou imprimir tudo da biblioteca aos poucos."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Bruno V.">
+                            <div>
+                                <strong>Bruno V.</strong>
+                                <span>Apaixonado por Setup Gamer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "Arquivos limpos, sem erros de malha. Imprimem de primeira no Bambu Lab sem precisar mexer
+                            em nada. Isso é o que faz a diferença."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="Lúcia F.">
+                            <div>
+                                <strong>Lúcia F.</strong>
+                                <span>Designer 3D</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "Já recuperei o investimento na primeira semana. Vendi três suportes de controle por
+                            encomenda. O preço da biblioteca é ridiculamente acessível."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Gustavo B.">
+                            <div>
+                                <strong>Gustavo B.</strong>
+                                <span>Revendedor de Peças 3D</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            "O guia de impressão que vem de bônus ajudou muito meu irmão que acabou de comprar a
+                            primeira impressora. Dica de ouro incluída junto."
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Eduardo X.">
+                            <div>
+                                <strong>Eduardo X.</strong>
+                                <span>Entusiasta 3D</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-hint">Arraste para ver mais &rarr;</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq py-section">
+        <div class="container faq-container">
+            <h2 class="text-center mb-4" style="margin-bottom: 40px;">Perguntas Frequentes</h2>
+
+            <div class="faq-item reveal-up">
+                <div class="faq-question">Os arquivos funcionam em qualquer impressora 3D? <svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg></div>
+                <div class="faq-answer" style="display: none;">
+                    <p>Sim, os modelos STL são compatíveis com qualquer impressora 3D, tanto de resina quanto de
+                        filamento (FDM e MSLA).</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal-up">
+                <div class="faq-question">Preciso saber modelar para usar a biblioteca? <svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg></div>
+                <div class="faq-answer" style="display: none;">
+                    <p>Não! Os arquivos STL já estão prontos. Basta abrir no seu slicer favorito (Cura, Bambu Studio,
+                        Chitubox, etc.) e enviar para a impressora.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal-up">
+                <div class="faq-question">Os arquivos já vêm otimizados para impressão? <svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg></div>
+                <div class="faq-answer" style="display: none;">
+                    <p>Sim. Os arquivos foram selecionados com atenção à qualidade de malha e facilidade de impressão.
+                        Muitos já vêm com suportes otimizados.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal-up">
+                <div class="faq-question">Qual é a forma de pagamento? <svg viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg></div>
+                <div class="faq-answer" style="display: none;">
+                    <p>Aceitamos Pix, Cartão de Crédito e Boleto. O acesso via Pix ou Cartão é liberado imediatamente no
+                        seu e-mail e WhatsApp.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal-up">
+                <div class="faq-question">Como vou ter acesso à biblioteca? <svg viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg></div>
+                <div class="faq-answer" style="display: none;">
+                    <p>Você receberá o link de acesso seguro e vitalício direto no seu e-mail e no seu WhatsApp logo
+                        após a aprovação da compra.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Posso usar os arquivos para vender as peças impressas? <svg
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg></div>
+                <div class="faq-answer" style="display: none;">
+                    <p>Os arquivos são para uso pessoal e profissional. Você pode imprimir e vender as peças físicas.
+                        Verifique os termos específicos de cada arquivo na plataforma de acesso.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Funciona na Creality, Bambu Lab, Anycubic, Ender...? <svg viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg></div>
+                <div class="faq-answer" style="display: none;">
+                    <p>Sim! Os arquivos vêm em formato STL, que é o padrão universal suportado por todas essas marcas e
+                        modelos do mercado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="bottom-cta py-section bg-darker" style="text-align: center;">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <h2 class="mb-3" style="font-size: 2.2rem; margin-bottom: 20px; width: 100%; text-align: center;">Pare de
+                Perder Horas
+                Procurando STL Pela Internet</h2>
+            <p class="mb-2"
+                style="font-size: 1rem; max-width: 800px; margin: 0 auto 15px; color: #fff; text-align: center;">Receba
+                instantaneamente uma biblioteca completa com mais de 250 modelos STL para setup gamer organizados e
+                prontos para imprimir.</p>
+            <p class="hero-subheadline" style="margin-bottom: 30px; text-align: center; width: 100%;">Exclusivo para
+                quem possui <span class="accent-text">impressora 3D</span> e trabalha com arquivos STL.</p>
+
+            <div
+                style="max-width: 600px; margin: 0 auto; width: 100%; display: flex; flex-direction: column; align-items: center;">
+                <a href="#oferta" class="cta-button opp-btn pulse-anim w-100" id="bottom-cta"
+                    style="padding: 20px; font-size: 1.3rem; display: block; text-align: center;">QUERO ACESSAR A
+                    BIBLIOTECA AGORA</a>
+                <p class="btn-guarantee" style="margin-top:12px;"><svg viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" width="14" height="14">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        <polyline points="9 11 11 13 15 9" />
+                    </svg> Garantia de 30 dias ou seu dinheiro de volta</p>
+                <p class="secure-notice" style="margin-top: 15px; font-size: 0.95rem; text-align: center; width: 100%;">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path
+                            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" />
+                    </svg> 100% SEGURO
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-dark" style="text-align: center;">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div class="footer-bottom-row"
+                style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 25px;">
+                <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">&copy; 2024 - 2026 Biblioteca Setup
+                    Master 3D. Todos
+                    os
+                    direitos reservados.</p>
+                <div class="footer-social" style="display: flex; align-items: center; gap: 15px;">
+                    <a href="https://www.instagram.com/garagem3dclub/" target="_blank" rel="noopener noreferrer"
+                        class="social-link" style="color: var(--text-muted); transition: color 0.3s; display: flex;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/5583993675962?text=Oi%2C%20quero%20garantir%20o%20acesso%20completo%20da%20Biblioteca%20Setup%20Master%203D."
+                        target="_blank" rel="noopener noreferrer" class="social-link"
+                        style="color: var(--text-muted); transition: color 0.3s; display: flex;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-13.5h.7c4.4 0 8 3.6 8 8z"></path>
+                            <path
+                                d="M3 21l1.6-4.9C3.1 13.5 2.5 10.5 3.5 7.5c1.1-3.1 3.9-5.4 7.5-5.4h.7c4.4 0 8 3.6 8 8s-3.6 8-8 8h-.7c-1.3 0-2.5-.3-3.6-.9L3 21z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links mb-4"
+                style="font-size: 0.8rem; margin-bottom: 30px; width: 100%; text-align: center;">
+                <a href="#" style="color: var(--text-muted); text-decoration: none; margin: 0 10px;">Termos de Uso</a>
+                <a href="#" style="color: var(--text-muted); text-decoration: none; margin: 0 10px;">Política de
+                    Privacidade</a>
+            </div>
+
+            <p
+                style="font-size: 0.7rem; color: #555; max-width: 900px; margin: 0 auto; line-height: 1.5; text-align: center;">
+                Este site não faz parte do site do Facebook ou da Facebook Inc. Além disso, este site não é endossado
+                pelo Facebook de qualquer maneira. FACEBOOK é uma marca comercial da FACEBOOK, Inc.
+            </p>
+        </div>
+    </footer>
+
+    <!-- STICKY CTA MOBILE -->
+    <div class="sticky-cta">
+        <div class="sticky-cta-content" style="justify-content: center;">
+            <a href="#oferta" class="cta-button primary-btn sticky-btn" style="width: 100%; max-width: 300px;">QUERO
+                ACESSAR A BIBLIOTECA</a>
+        </div>
+    </div>
+
+
+
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
