@@ -359,7 +359,7 @@
             </div>
 
             <div class="text-center" style="margin-top: 50px; display: flex; justify-content: center; width: 100%;">
-                <a href="https://ggcheckout.app/checkout/v5/Zj5MrdupVGz9mwMmtid2"
+                <a href="https://ggcheckout.app/checkout/v5/jEzODQR4UdwU1ljfqvEI"
                     class="cta-button primary-btn pulse-anim"
                     style="padding: 16px 40px; font-size: 1.15rem; display: inline-block; text-align: center; max-width: 100%; box-sizing: border-box;">SIM!
                     QUERO RECEBER O MATERIAL AGORA</a>
@@ -1042,112 +1042,25 @@
         </div>
     </section>
 
-    <!-- SIMULADOR DE GANHOS -->
-    <section class="revenue-simulator py-section">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2 id="sim-title">Veja quanto você pode <span class="accent-text">faturar</span></h2>
-                <p>Descubra o potencial de retorno financeiro rápido vendendo as peças impressas desta biblioteca.</p>
+    <!-- MODELOS DETALHADOS -->
+    <section class="detailed-models py-section">
+        <div class="container text-center">
+            <div class="section-header">
+                <h2>Veja os <span class="accent-text">Modelos Detalhados</span> em Ação</h2>
+                <p>Nossos modelos são altamente detalhados, testados e perfeitos para impressão. Confira algumas amostras reais dos nossos suportes para headset e controle.</p>
             </div>
-
-            <div class="sim-card reveal-up">
-                <!-- Passo 1: Perguntas -->
-                <div class="sim-step" id="sim-step-1">
-                    <div class="sim-question">
-                        <h3>Você já vende peças impressas?</h3>
-                        <div class="sim-options">
-                            <button class="sim-btn" data-type="ja-vendo">Sim, já vendo</button>
-                            <button class="sim-btn" data-type="quero-comecar">Não, mas quero começar</button>
-                            <button class="sim-btn" data-type="so-imprimo">Só imprimo pra mim</button>
-                        </div>
-                    </div>
-
-                    <div class="sim-question mt-4" id="q2-container"
-                        style="display:none; opacity:0; transition: opacity 0.5s;">
-                        <h3 style="margin-top: 30px;">Tempo disponível por semana para imprimir:</h3>
-                        <div class="sim-options">
-                            <button class="sim-btn" data-time="pouco">2–5 horas</button>
-                            <button class="sim-btn" data-time="medio">6–10 horas</button>
-                            <button class="sim-btn" data-time="muito">+10 horas</button>
-                        </div>
-                    </div>
+            <div class="video-grid" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
+                <div class="video-item" style="display: flex; flex-direction: column; align-items: center;">
+                    <video src="assets/amostra 01 .mp4" autoplay loop muted playsinline style="max-width: 100%; width: 320px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); pointer-events: none;"></video>
+                    <p style="margin-top: 12px; font-weight: 700; color: #e5e5e5; font-size: 1.05rem; letter-spacing: 0.5px;">Suporte para Headset</p>
                 </div>
-
-                <!-- Passo 2: Calculadora (Inicia oculta) -->
-                <div class="sim-calculator" id="sim-calculator" style="display:none;">
-
-                    <div class="sim-controls">
-                        <div class="sim-slider-group">
-                            <label>🖨️ Peças vendidas por semana: <span id="val-pecas" class="sim-val">10</span></label>
-                            <input type="range" id="slider-pecas" min="1" max="50" value="10" class="sim-slider">
-                        </div>
-
-                        <div class="sim-slider-group">
-                            <label>💰 Preço médio de venda: <span id="val-preco" class="sim-val">R$ 45</span></label>
-                            <input type="range" id="slider-preco" min="15" max="150" step="5" value="45"
-                                class="sim-slider">
-                        </div>
-                    </div>
-
-                    <div class="sim-results">
-                        <div class="sim-result-row">
-                            <span>Faturamento mensal (bruto):</span>
-                            <span id="res-faturamento">R$ 1.800,00</span>
-                        </div>
-                        <div class="sim-result-row sim-cost">
-                            <span>Custo de filamento (~R$3/peça):</span>
-                            <span id="res-custo">- R$ 120,00</span>
-                        </div>
-                        <div class="sim-result-row sim-cost">
-                            <span>Custo do produto (Acesso à Biblioteca):</span>
-                            <span id="res-custo-taxa">- R$ 27,90</span>
-                        </div>
-                        <div class="sim-result-row sim-cost">
-                            <span>Custo de energia (~R$1/peça):</span>
-                            <span id="res-custo-energia">- R$ 40,00</span>
-                        </div>
-                        <hr class="sim-divider">
-                        <div class="sim-result-row sim-profit">
-                            <span>Lucro Líquido Estimado:</span>
-                            <strong id="res-lucro">R$ 1.680,00 <small>/mês</small></strong>
-                        </div>
-
-                        <div class="sim-roi-box">
-                            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                                <polyline points="9 11 11 13 15 9" />
-                            </svg>
-                            <div>
-                                <strong>Retorno da Biblioteca (R$27,90):</strong><br>
-                                <span id="res-recupera" style="color:#10b981;">Recuperado em apenas 1 peça
-                                    vendida!</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="sim-emotional-copy"
-                        style="margin-top: 25px; padding: 20px; background: rgba(220, 38, 38, 0.1); border-left: 4px solid var(--accent-red); border-radius: 4px; text-align: left;">
-                        <p style="margin: 0; font-size: 1rem; color: #fff; line-height: 1.6;">
-                            <strong>A verdade é uma só:</strong> enquanto sua impressora está parada ou imprimindo
-                            coisas que ninguém compra, milhares de pessoas estão procurando exatamente agora por itens
-                            de organização para seus setups.
-                            <br><br>
-                            Você tem a máquina. Você tem o mercado altamente aquecido. Agora você só precisa dos
-                            <strong>arquivos certos</strong> para transformar plástico em lucro. Não deixe essa
-                            oportunidade de criar sua própria renda extra passar.
-                        </p>
-                    </div>
-
-                    <a href="https://ggcheckout.app/checkout/v5/Zj5MrdupVGz9mwMmtid2"
-                        class="cta-button primary-btn pulse-anim w-100" id="sim-cta"
-                        style="margin-top:20px; font-size: 1.1rem; padding: 15px;">QUERO ACESSAR E FATURAR <span
-                            id="cta-val">R$ 1.680</span>/MÊS</a>
-                    <p class="btn-guarantee" style="margin-top:10px;"><svg viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" width="14" height="14">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                            <polyline points="9 11 11 13 15 9" />
-                        </svg> Garantia de 30 dias ou seu dinheiro de volta</p>
+                <div class="video-item" style="display: flex; flex-direction: column; align-items: center;">
+                    <video src="assets/amostra 02.mp4" autoplay loop muted playsinline style="max-width: 100%; width: 320px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); pointer-events: none;"></video>
+                    <p style="margin-top: 12px; font-weight: 700; color: #e5e5e5; font-size: 1.05rem; letter-spacing: 0.5px;">Suporte para Headset</p>
+                </div>
+                <div class="video-item" style="display: flex; flex-direction: column; align-items: center;">
+                    <video src="assets/amostra 3 .mp4" autoplay loop muted playsinline style="max-width: 100%; width: 320px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); pointer-events: none;"></video>
+                    <p style="margin-top: 12px; font-weight: 700; color: #e5e5e5; font-size: 1.05rem; letter-spacing: 0.5px;">Suporte para Controle</p>
                 </div>
             </div>
         </div>
@@ -1185,6 +1098,13 @@
                         <div class="timer-block"><span class="timer-num">00</span><span class="timer-text">SEG</span>
                         </div>
                     </div>
+                </div>
+
+                <div class="investment-copy reveal-up" style="margin-top: 25px; max-width: 600px; margin-left: auto; margin-right: auto; padding: 15px; border: 1px dashed var(--accent-red); border-radius: 8px; background: rgba(220, 38, 38, 0.05);">
+                    <p style="margin: 0; font-size: 1.05rem; line-height: 1.5; color: #e5e5e5;">
+                        <strong>Isso não é um gasto, é um investimento de longo prazo.</strong><br>
+                        Com a venda de apenas <span class="accent-text" style="font-weight: 700;">uma ou duas peças</span> impressas, você já recupera todo o valor pago hoje. Aumente seu leque de opções e comece a lucrar mais com sua impressora 3D!
+                    </p>
                 </div>
 
                 <!-- BANNER PIX -->
@@ -1299,7 +1219,7 @@
                         </div>
                     </div>
 
-                    <a href="https://ggcheckout.app/checkout/v5/Zj5MrdupVGz9mwMmtid2" id="btn-comprar"
+                    <a href="https://ggcheckout.app/checkout/v5/jEzODQR4UdwU1ljfqvEI" id="btn-comprar"
                         class="cta-button opp-btn pulse-anim w-100"
                         style="margin-bottom: 0; font-size: 1rem; padding: 18px 20px;">COMPRAR AGORA</a>
                     <p class="btn-guarantee" style="margin-top:10px;"><svg viewBox="0 0 24 24" fill="none"
