@@ -152,40 +152,85 @@ a {
     text-shadow: 0 0 12px rgba(139, 92, 246, 0.5);
 }
 
-/* SCROLL REVEAL ANIMATIONS */
-.reveal {
+/* ============================================================
+   SCROLL REVEAL ANIMATIONS — Sistema Completo
+   ============================================================ */
+
+/* Base: todos os elementos animáveis começam invisíveis */
+.reveal-up,
+.reveal-left,
+.reveal-right,
+.reveal-fade {
     opacity: 0;
-    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: opacity, transform;
+    transition-duration: 0.75s;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
     will-change: transform, opacity;
 }
 
-.reveal-up {
-    transform: translateY(40px);
-}
+/* Estados iniciais por direção */
+.reveal-up    { transform: translateY(48px); }
+.reveal-left  { transform: translateX(-60px); }
+.reveal-right { transform: translateX(60px); }
+.reveal-fade  { transform: scale(0.97); }
 
-.reveal-left {
-    transform: translateX(-50px);
-}
-
-.reveal-right {
-    transform: translateX(50px);
-}
-
-.reveal.active {
+/* Estado ativo — elemento visível */
+.reveal-up.active,
+.reveal-left.active,
+.reveal-right.active,
+.reveal-fade.active {
     opacity: 1;
-    transform: translate(0, 0);
+    transform: none;
 }
 
+/* Delays escalonados via data-delay (definido pelo JS) */
+/* O JS define el.dataset.delay = ms e o CSS usa como var via inline style.
+   Mas como fallback, usamos transition-delay aqui também. */
+.reveal-up[data-delay],
+.reveal-left[data-delay],
+.reveal-right[data-delay],
+.reveal-fade[data-delay] {
+    transition-delay: 0ms; /* será sobrescrito pelo JS se necessário */
+}
+
+/* Mobile: reduz translação e tempo para melhor fluidez */
 @media (max-width: 768px) {
-    .reveal {
+    .reveal-up    { transform: translateY(28px); }
+    .reveal-left  { transform: translateX(-30px); }
+    .reveal-right { transform: translateX(30px); }
+    .reveal-fade  { transform: scale(0.98); }
+
+    .reveal-up,
+    .reveal-left,
+    .reveal-right,
+    .reveal-fade {
         transition-duration: 0.5s;
     }
+}
 
+/* Redução de movimento para acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    .reveal-up,
     .reveal-left,
-    .reveal-right {
-        transform: translateX(0) translateY(20px);
-        /* Better for mobile flow */
+    .reveal-right,
+    .reveal-fade {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
     }
+}
+
+/* Barra de progresso de scroll (topo da página) */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, #7E6BB3, #a855f7);
+    z-index: 9999;
+    transition: width 0.1s linear;
+    pointer-events: none;
 }
 
 /* BUTTONS */

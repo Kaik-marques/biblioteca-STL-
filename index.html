@@ -7,11 +7,20 @@
     <title>Biblioteca Setup Master 3D — +250 Projetos STL para Imprimir Agora</title>
     <meta name="description"
         content="Sua próxima impressão está aqui. Mais de 250 projetos STL premium organizados em uma única biblioteca para quem nunca quer ficar sem algo incrível para imprimir. Download imediato.">
+    <meta name="theme-color" content="#030305">
+
+    <!-- Preconnects de performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.utmify.com.br">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://randomuser.me">
+    <link rel="dns-prefetch" href="https://connect.facebook.net">
 
-    <link rel="preload" as="image" href="assets/hero_stl_setup.png">
+    <!-- Preload de recursos críticos (acima da dobra) -->
+    <link rel="preload" as="image" href="assets/mockup_hero.webp" fetchpriority="high">
+    <link rel="preload" as="style" href="css/style.css">
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXo.woff2" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -141,6 +150,8 @@
 </head>
 
 <body>
+    <!-- Barra de progresso de scroll -->
+    <div id="scroll-progress" aria-hidden="true"></div>
     <div class="top-announcement-bar">
         <svg viewBox="0 0 24 24">
             <path
@@ -314,7 +325,7 @@
     <!-- PROVAS SOCIAIS -->
     <section class="social-proof py-section">
         <div class="container">
-            <div class="section-header text-center">
+            <div class="section-header text-center reveal-up">
                 <h2>Depoimentos reais de clientes que já <span class="accent-text">compraram</span></h2>
             </div>
 
@@ -688,7 +699,7 @@
     </section>
 
     <!-- COMPATIBILIDADE IMPRESSORAS -->
-    <div class="printer-compatibility">
+    <div class="printer-compatibility reveal-fade">
         <div class="container">
             <p class="compatibility-title">COMPATÍVEL COM TODAS AS IMPRESSORAS 3D</p>
             <div class="printer-marquee">
@@ -807,7 +818,7 @@
     <!-- SEÇÃO DE BENEFÍCIOS -->
     <section class="advantages py-section bg-darker">
         <div class="container text-center">
-            <div class="section-header text-center">
+            <div class="section-header text-center reveal-up">
                 <h2>Por Que Essa Biblioteca <span class="accent-text">É Diferente?</span></h2>
             </div>
             <div class="advantages-grid">
@@ -876,7 +887,7 @@
     <!-- VALUE STACK (OFERTA SEM PREÇO) -->
     <section class="value-stack py-section">
         <div class="container">
-            <div class="value-stack-wrapper reveal-up">
+            <div class="value-stack-wrapper reveal-fade">
                 <div class="value-stack-card">
                     <div class="value-stack-badge">ACESSO IMEDIATO</div>
                     <h2 class="value-stack-title">TUDO O QUE VOCÊ VAI RECEBER:</h2>
@@ -1012,7 +1023,7 @@
     <!-- PROCESSO DE ENTREGA -->
     <section class="delivery-process py-section bg-darker">
         <div class="container">
-            <div class="section-header text-center">
+            <div class="section-header text-center reveal-up">
                 <h2>Pagamento Aprovado, Recebeu! <span class="accent-text">Acesso Imediato</span></h2>
                 <p>Seu acesso é enviado automaticamente em menos de 1 minuto após o pagamento. Sem atraso, sem
                     burocracia.</p>
@@ -1065,21 +1076,21 @@
     <!-- MODELOS DETALHADOS -->
     <section class="detailed-models py-section">
         <div class="container text-center">
-            <div class="section-header">
+            <div class="section-header reveal-up">
                 <h2>Veja os <span class="accent-text">Modelos Detalhados</span> em Ação</h2>
                 <p>Nossos modelos são altamente detalhados, testados e perfeitos para impressão. Confira algumas amostras reais dos nossos suportes para headset e controle.</p>
             </div>
             <div class="video-grid" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 40px;">
-                <div class="video-item" style="display: flex; flex-direction: column; align-items: center;">
+                <div class="video-item reveal-left" style="display: flex; flex-direction: column; align-items: center;">
                     <video src="assets/amostra 01 .mp4" autoplay loop muted playsinline style="max-width: 100%; width: 320px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); pointer-events: none;"></video>
                     <p style="margin-top: 12px; font-weight: 700; color: #e5e5e5; font-size: 1.05rem; letter-spacing: 0.5px;">Suporte para Headset</p>
                 </div>
-                <div class="video-item" style="display: flex; flex-direction: column; align-items: center;">
-                    <video src="assets/amostra 02.mp4" autoplay loop muted playsinline style="max-width: 100%; width: 320px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); pointer-events: none;"></video>
+                <div class="video-item reveal-up" style="display: flex; flex-direction: column; align-items: center;">
+                    <video data-src="assets/amostra 02.mp4" autoplay loop muted playsinline style="max-width: 100%; width: 320px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); pointer-events: none;"></video>
                     <p style="margin-top: 12px; font-weight: 700; color: #e5e5e5; font-size: 1.05rem; letter-spacing: 0.5px;">Suporte para Headset</p>
                 </div>
-                <div class="video-item" style="display: flex; flex-direction: column; align-items: center;">
-                    <video src="assets/amostra 3 .mp4" autoplay loop muted playsinline style="max-width: 100%; width: 320px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); pointer-events: none;"></video>
+                <div class="video-item reveal-right" style="display: flex; flex-direction: column; align-items: center;">
+                    <video data-src="assets/amostra 3 .mp4" autoplay loop muted playsinline style="max-width: 100%; width: 320px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); pointer-events: none;"></video>
                     <p style="margin-top: 12px; font-weight: 700; color: #e5e5e5; font-size: 1.05rem; letter-spacing: 0.5px;">Suporte para Controle</p>
                 </div>
             </div>
@@ -1296,8 +1307,8 @@
     <!-- GARANTIA -->
     <section class="guarantee py-section">
         <div class="container text-center">
-            <div class="guarantee-box">
-                <img src="assets/guarante_icon.webp" alt="Garantia 30 Dias" class="guarantee-img">
+            <div class="guarantee-box reveal-fade">
+                <img src="assets/guarante_icon.webp" alt="Garantia 30 Dias" class="guarantee-img" loading="lazy" width="120" height="120">
                 <h2>Seu Investimento Protegido</h2>
                 <p>Teste a biblioteca por <strong>30 dias</strong>. Se ela não entregar valor para você, basta acionar a
                     garantia. Sua satisfação ou seu investimento de volta — sem perguntas, sem burocracia.</p>
@@ -1315,7 +1326,7 @@
     <!-- TESTEMUNHOS -->
     <section class="testimonials py-section bg-darker">
         <div class="container">
-            <div class="section-header text-center">
+            <div class="section-header text-center reveal-up">
                 <h2>O que nossos <span class="accent-text">clientes</span> dizem</h2>
                 <p>Junte-se a centenas de makers e entusiastas que já estão imprimindo com a biblioteca.</p>
             </div>
@@ -1435,7 +1446,7 @@
     <!-- FAQ -->
     <section class="faq py-section">
         <div class="container faq-container">
-            <h2 class="text-center mb-4" style="margin-bottom: 40px;">Perguntas Frequentes</h2>
+            <h2 class="text-center mb-4 reveal-up" style="margin-bottom: 40px;">Perguntas Frequentes</h2>
 
             <div class="faq-item reveal-up">
                 <div class="faq-question">Os arquivos funcionam em qualquer impressora 3D? <svg viewBox="0 0 24 24"
@@ -1594,14 +1605,13 @@
     <!-- STICKY CTA MOBILE -->
     <div class="sticky-cta">
         <div class="sticky-cta-content" style="justify-content: center;">
-            <a href="#oferta" class="cta-button primary-btn sticky-btn" style="width: 100%; max-width: 300px;">QUERO
-                ACESSAR A BIBLIOTECA</a>
+            <a href="#oferta" class="cta-button primary-btn sticky-btn" style="width: 100%; max-width: 300px;">VER A BIBLIOTECA COMPLETA</a>
         </div>
     </div>
 
 
 
-    <!-- Swiper.js JS -->
+    <!-- Swiper.js JS (carregado antes do script.js para disponibilizar a API) -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 
